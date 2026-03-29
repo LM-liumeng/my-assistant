@@ -1,2 +1,0 @@
-{"timestamp": "2026-03-07T03:55:53.283597Z", "event": "command_received", "command": "knowledge password reset expiration"}
-{"timestamp": "2026-03-07T03:55:53.283597Z", "event": "tool_call", "tool": "rag_query", "params": {"query": "password reset expiration", "top_k": 6}}
