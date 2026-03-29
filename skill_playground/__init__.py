@@ -1,0 +1,1 @@
+﻿"""Minimal skill playground package."""

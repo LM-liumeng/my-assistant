@@ -1,0 +1,27 @@
+{
+  "summary": "Primary generation skill for research, trend, report, and feasibility questions that need synthesis instead of casual chat.",
+  "when_to_use": [
+    "The user asks about research hotspots, trends, outlooks, reports, feasibility, or structured analysis.",
+    "The answer should synthesize evidence or reasoning into a concise analytical response."
+  ],
+  "when_not_to_use": [
+    "Do not use for small talk, tool capability questions, or simple file/email operations.",
+    "Do not use when the user only wants casual conversation or a one-line reply."
+  ],
+  "examples": [
+    "2026年大模型还有哪些研究热点",
+    "请给我一份可行性分析",
+    "2025年行业趋势怎么看"
+  ],
+  "input_signals": [
+    "研究",
+    "趋势",
+    "报告",
+    "方案",
+    "热点",
+    "research",
+    "trend",
+    "report"
+  ],
+  "output_role": "primary synthesis"
+}

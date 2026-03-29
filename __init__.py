@@ -1,0 +1,1 @@
+# This package contains the AI desktop assistant demonstration code.

@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill Playground</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="playground-shell">
+      <section class="workspace-grid">
+        <section class="chat-panel">
+          <header class="chat-header">
+            <div>
+              <p class="eyebrow">Skill Playground</p>
+              <h1>Skill 会话测试</h1>
+              <p class="subcopy">左侧用于会话测试，右侧实时显示本次调用中 skill 路由、语义判断、策略裁剪和聊天请求的追踪日志。</p>
+            </div>
+            <button id="reload-skills-btn" type="button" class="secondary-button">重载 Skills</button>
+          </header>
+
+          <div id="chat-log" class="chat-log"></div>
+
+          <form id="chat-form" class="chat-form">
+            <textarea id="chat-input" placeholder="输入一段问题，观察 skill 如何影响回答。" rows="4"></textarea>
+            <div class="chat-actions">
+              <span id="status-text" class="status-text">就绪</span>
+              <button id="send-btn" type="submit">发送</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="trace-panel">
+          <header class="trace-header">
+            <div>
+              <p class="eyebrow">Trace</p>
+              <h2>Skill 调用日志</h2>
+            </div>
+            <span id="trace-status" class="trace-status">等待请求</span>
+          </header>
+          <div id="trace-log" class="trace-log"></div>
+        </aside>
+      </section>
+    </main>
+
+    <template id="message-template">
+      <article class="message">
+        <div class="message-meta"></div>
+        <div class="message-body"></div>
+        <div class="message-skills"></div>
+      </article>
+    </template>
+
+    <template id="trace-template">
+      <article class="trace-entry">
+        <div class="trace-entry__meta"></div>
+        <div class="trace-entry__message"></div>
+        <pre class="trace-entry__details"></pre>
+      </article>
+    </template>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

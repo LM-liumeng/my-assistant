@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-03-07T00:00:00+00:00",
+  "input_dir": "tmp_rag_scores2\\knowledge",
+  "output_dir": "tmp_rag_scores2\\rag",
+  "collection_name": "rag_chunks",
+  "embedding_model": "fake-model",
+  "documents": [
+    {
+      "doc_id": "doc_1",
+      "source_path": "tmp_rag_scores2\\knowledge\\policy.txt",
+      "source_name": "policy.txt",
+      "checksum": "abc123",
+      "doc_type": "txt",
+      "updated_at": "2026-03-07T00:00:00+00:00"
+    }
+  ],
+  "chunk_count": 2
+}

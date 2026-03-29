@@ -1,0 +1,12 @@
+{
+  "active_knowledge_base": "default",
+  "knowledge_bases": {
+    "default": {
+      "id": "default",
+      "name": "default",
+      "description": "项目默认知识库",
+      "input_dir": "D:\\CodeProject\\assistant_demo\\data\\knowledge",
+      "output_dir": "D:\\CodeProject\\assistant_demo\\data\\rag\\default"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-08T10:42:45.688407+00:00",
+  "input_dir": "D:\\CodeProject\\assistant_demo\\data\\knowledge",
+  "output_dir": "D:\\CodeProject\\assistant_demo\\data\\rag\\default",
+  "collection_name": "",
+  "embedding_model": "BAAI/bge-m3",
+  "documents": [
+    {
+      "doc_id": "txt_325a30e5213f3607",
+      "source_path": "D:\\CodeProject\\assistant_demo\\data\\knowledge\\2025年增长最快品牌统计数据.txt",
+      "source_name": "2025年增长最快品牌统计数据.txt",
+      "checksum": "1c3bf7da4c4b2fd66e2017951fb113ef744287c8bf835e789bd0cbef6a155a76",
+      "doc_type": "text",
+      "updated_at": "2026-03-08T02:52:33.299861+00:00"
+    },
+    {
+      "doc_id": "txt_69a48a51f20c47d8",
+      "source_path": "D:\\CodeProject\\assistant_demo\\data\\knowledge\\2026年投资展望报告.txt",
+      "source_name": "2026年投资展望报告.txt",
+      "checksum": "e52c4168184b31baabbfa5f46602f1bb305a28836b271a20048e8348773f991d",
+      "doc_type": "text",
+      "updated_at": "2026-03-08T02:53:44.639963+00:00"
+    }
+  ],
+  "chunk_count": 2
+}

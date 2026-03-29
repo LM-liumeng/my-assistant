@@ -1,0 +1,59 @@
+{
+  "skill_id": "research-synthesis",
+  "name": "Research Synthesis",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "prompt",
+  "subtype": "generation",
+  "description": "Improve research, trend, report, and feasibility answers with stronger synthesis and structure.",
+  "auto_apply": false,
+  "priority": 80,
+  "scope": [
+    "generation"
+  ],
+  "surfaces": [
+    "chat",
+    "rag"
+  ],
+  "triggers": [
+    "研究",
+    "趋势",
+    "报告",
+    "方案",
+    "可行性",
+    "热点",
+    "research",
+    "trend",
+    "report",
+    "feasibility"
+  ],
+  "patterns": [
+    "20\\d{2}年.*(趋势|热点|展望)",
+    "(研究|报告).*(趋势|方案|可行性)"
+  ],
+  "input_schema": {},
+  "output_schema": {},
+  "depends_on": [
+    "comfortable-response"
+  ],
+  "conflicts_with": [
+    "casual-style"
+  ],
+  "fail_policy": "fail_open",
+  "timeout_ms": 1000,
+  "owner": "agent-team",
+  "tags": [
+    "research",
+    "analysis",
+    "synthesis"
+  ],
+  "cost_level": "low",
+  "risk_level": "low",
+  "rollout": {
+    "env": [
+      "all"
+    ],
+    "traffic_percent": 100
+  },
+  "threshold": 0.78
+}

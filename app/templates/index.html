@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>边云拳王的小助手</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="topbar">
+        <div class="header-copy">
+          <div class="assistant-name">边云拳王的小助手</div>
+        </div>
+        <div class="assistant-avatar">
+          <img src="{{ url_for('static', filename='avatar.png') }}" alt="助手头像" />
+        </div>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <main class="workspace">
+        <section id="container">
+          <section id="chat-window" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Conversation</p>
+                <h2>对话区</h2>
+              </div>
+            </div>
+            <div id="chat-history" class="chat-history"></div>
+            <div id="chat-input" class="chat-input">
+              <input id="user-input" type="text" placeholder="输入命令或继续追问..." autocomplete="off" />
+              <button id="send-button">发送</button>
+            </div>
+          </section>
+
+          <section id="display-window" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="panel-label">Editor</p>
+                <h2>展示区</h2>
+              </div>
+            </div>
+            <div id="display-controls" class="display-controls">
+              <input type="text" id="display-filename" placeholder="文件名，例如 notes.txt" />
+              <button id="load-file">加载</button>
+              <button id="save-file">保存</button>
+              <button id="clear-display" type="button">清空</button>
+            </div>
+            <textarea id="display-content" placeholder="文件内容..." spellcheck="false"></textarea>
+          </section>
+        </section>
+
+        <section id="feature-zone" class="feature-zone">
+          <div class="section-heading">
+            <p class="panel-label">Extensions</p>
+            <h2>预留功能区</h2>
+            <p>两行三列共六个模块位，后续可逐个替换为独立功能入口。</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-card--rag">
+              <span class="feature-index">01</span>
+              <h3>知识库管理</h3>
+              <p>按业务场景分类管理知识库，切换当前激活知识库，并直接完成入库、重建和内容查看。</p>
+              <div class="rag-panel">
+                <label class="rag-panel__label" for="rag-kb-select">当前知识库</label>
+                <div class="rag-panel__selector-row">
+                  <select id="rag-kb-select"></select>
+                  <button id="rag-refresh-btn" type="button">刷新列表</button>
+                  <button id="rag-select-btn" type="button">设为当前</button>
+                </div>
+
+                <label class="rag-panel__label" for="rag-kb-id">知识库编号</label>
+                <input type="text" id="rag-kb-id" placeholder="例如 product、hr、ops" />
+
+                <label class="rag-panel__label" for="rag-kb-name">知识库名称</label>
+                <input type="text" id="rag-kb-name" placeholder="例如 产品文档库" />
+
+                <label class="rag-panel__label" for="rag-input-dir">知识源目录</label>
+                <input type="text" id="rag-input-dir" placeholder="输入 txt/docx/pdf 所在目录" />
+
+                <label class="rag-panel__label" for="rag-kb-description">说明</label>
+                <input type="text" id="rag-kb-description" placeholder="可选，用于标注这个知识库的业务用途" />
+
+                <div class="rag-panel__actions">
+                  <button id="rag-save-btn" type="button">保存配置</button>
+                  <button id="rag-status-btn" type="button">查看状态</button>
+                  <button id="rag-ingest-btn" type="button">增量入库</button>
+                  <button id="rag-rebuild-btn" type="button">重建索引</button>
+                  <button id="rag-contents-btn" type="button">查看库内容</button>
+                </div>
+                <p id="rag-panel-status" class="rag-panel__status">就绪</p>
+              </div>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">02</span>
+              <h3>功能模块二</h3>
+              <p>预留区域，可放置指定产品能力。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">03</span>
+              <h3>功能模块三</h3>
+              <p>预留区域，可放置指定产品能力。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">04</span>
+              <h3>功能模块四</h3>
+              <p>预留区域，可放置指定产品能力。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">05</span>
+              <h3>功能模块五</h3>
+              <p>预留区域，可放置指定产品能力。</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-index">06</span>
+              <h3>功能模块六</h3>
+              <p>预留区域，可放置指定产品能力。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

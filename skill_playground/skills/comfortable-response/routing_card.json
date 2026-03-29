@@ -1,0 +1,21 @@
+{
+  "summary": "Always-on response-style overlay that keeps answers calm, direct, and readable.",
+  "when_to_use": [
+    "Apply as a modifier for normal assistant responses that should stay readable and comfortable.",
+    "Use to reduce decorative formatting and keep answers natural."
+  ],
+  "when_not_to_use": [
+    "Do not treat this as the main domain skill.",
+    "Do not use it to make tool-planning decisions by itself."
+  ],
+  "examples": [
+    "你除了对话之外还有什么功能",
+    "请总结一下这个结果"
+  ],
+  "input_signals": [
+    "clarity",
+    "clean output",
+    "natural response"
+  ],
+  "output_role": "style overlay"
+}

@@ -1,0 +1,50 @@
+{
+  "skill_id": "comfortable-response",
+  "name": "Comfortable Response",
+  "version": "1.0.0",
+  "enabled": true,
+  "type": "prompt",
+  "subtype": "style",
+  "description": "Keep answers calm, direct, and readable without changing the assistant's real capabilities.",
+  "auto_apply": true,
+  "priority": 40,
+  "scope": [
+    "generation",
+    "postprocess"
+  ],
+  "surfaces": [
+    "chat",
+    "capability",
+    "media",
+    "rag"
+  ],
+  "triggers": [],
+  "patterns": [],
+  "input_schema": {},
+  "output_schema": {},
+  "depends_on": [],
+  "conflicts_with": [],
+  "fail_policy": "fail_open",
+  "timeout_ms": 1000,
+  "owner": "agent-team",
+  "tags": [
+    "style",
+    "clarity",
+    "clean-output"
+  ],
+  "cost_level": "low",
+  "risk_level": "low",
+  "rollout": {
+    "env": [
+      "all"
+    ],
+    "traffic_percent": 100
+  },
+  "is_default": true,
+  "default_for_surfaces": [
+    "all"
+  ],
+  "default_for_phases": [
+    "postprocess"
+  ]
+}
